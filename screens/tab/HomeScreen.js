@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
-import TabComponent from '../../components/tab/TabComponent';
+import HomeComponent from '../../components/tab/HomeComponent';
 
 class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <TabComponent text={'This is Home screen!'} />
+        <HomeComponent/>
       </View>
     );
   }
@@ -23,7 +23,7 @@ HomeScreen.navigationOptions = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'rgba(0, 255, 0, 0.4)',
+    backgroundColor: '#1F2124',
     flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'stretch',
